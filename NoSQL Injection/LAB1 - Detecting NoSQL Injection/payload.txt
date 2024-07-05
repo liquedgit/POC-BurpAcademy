@@ -1,0 +1,4 @@
+https://{BASEURL LAB}/filter?category=%27%20%7c%7c%20%31%20%7c%7c%20%27%78
+
+URL-Decoded Payload
+' || 1 || 'x

